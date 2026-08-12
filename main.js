@@ -7,5 +7,5 @@ fetch(
     return response.json();
   })
   .then(function (response) {
-    console.log(response);
+    console.log(response.data.images.original.url);
   });
