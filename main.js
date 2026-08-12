@@ -10,5 +10,7 @@ fetch(
     // console.log(response.data.images.original.url);
     img.src = response.data.images.original.url;
     console.log(img.src);
-    
+  })
+  .catch((e) => {
+    console.log(e);
   });
