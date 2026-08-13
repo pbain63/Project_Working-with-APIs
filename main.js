@@ -6,6 +6,9 @@ function getNewGif() {
     "https://api.giphy.com/v1/gifs/translate?api_key=JxoghZbdsbGeUxaK82pDSgRxEX40cj8U&s=dogs"
   )
     .then(function (response) {
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
       return response.json();
     })
     .then(function (response) {
@@ -16,7 +19,5 @@ function getNewGif() {
     .catch((e) => {
       console.log(e);
     });
-  
 }
 showNewGif.addEventListener("click", getNewGif);
-
