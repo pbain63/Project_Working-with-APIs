@@ -16,8 +16,8 @@ function getNewGif() {
       img.src = response.data.images.original.url;
       console.log(img.src);
     })
-    .catch((e) => {
-      console.log(e);
+    .catch((error) => {
+      console.error("Error fetching the image:", error);
     });
 }
 showNewGif.addEventListener("click", getNewGif);
