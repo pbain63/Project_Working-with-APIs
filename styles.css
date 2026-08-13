@@ -9,3 +9,11 @@
 h1 {
   color: red;
 }
+
+#new-gif-button{
+  padding: 0.75rem 0.5rem;
+  font-size: 1rem;
+}
+img {
+  display: block;
+}
