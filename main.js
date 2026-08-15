@@ -136,3 +136,6 @@ searchForm.addEventListener("submit", (event) => {
   event.preventDefault();
   searchGifs();
 });
+
+//Load more button
+loadMoreButton.addEventListener("click", loadMoreGifs);
