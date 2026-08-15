@@ -108,4 +108,19 @@ async function loadMoreGifs() {
 
   loadMoreButton.disabled = true;
   statusMessage.textContent = "Loading more GIFs...";
+
+  try {
+    const response = await fetchGifs(currentSearchTerm, currentOffset);
+
+    if (response.data.length === 0) {
+      statusMessage.textContent = "There are no more GIFs to load.";
+      loadMoreButton.hidden = true;
+
+      return;
+    }
+
+    displayGifs(response.data);
+    currentOffset += response.data.length;
+    statusMessage.textContent = `Showing GIFs for "${currentSearchTerm}"`;
+  } catch (error) {}
 }
