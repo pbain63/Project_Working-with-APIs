@@ -47,6 +47,19 @@ function createGifCard(gif) {
   return article;
 }
 
+//Display GIFS
+function displayGifs(gifs) {
+  const fragment = document.createDocumentFragment();
+
+  gifs.forEach((gif) => {
+    const gifCard = createGifCard(gif);
+
+    fragment.appendChild(gifCard);
+  });
+
+  gifContainer.appendChild(fragment);
+}
+
 // Search for GIFs
 async function searchGifs() {
   const searchTerm = searchInput.value.trim();
