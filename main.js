@@ -21,6 +21,8 @@ async function fetchGifs(searchTerm, offset = 0) {
   url.searchParams.set("limit", GIFS_PER_PAGE);
   url.searchParams.set("offset", offset);
   url.searchParams.set("rating", "g");      //TODO
+
+  const response = await fetch(url);
 }
 
 // Search for GIFs
