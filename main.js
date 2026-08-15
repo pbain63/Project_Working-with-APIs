@@ -123,6 +123,10 @@ async function loadMoreGifs() {
     currentOffset += response.data.length;
     statusMessage.textContent = `Showing GIFs for "${currentSearchTerm}"`;
   } catch (error) {
-    
+    console.error("Error loading more GIFs:", error);
+
+    statusMessage.textContent = "Could not load more GIFs. Please try again.";
+  } finally {
+    loadMoreButton.disabled = false;
   }
 }
