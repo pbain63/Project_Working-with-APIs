@@ -1,23 +1,9 @@
-const img = document.querySelector("img");
-const showNewGif = document.getElementById("new-gif-button");
+const API_KEY = "JxoghZbdsbGeUxaK82pDSgRxEX40cj8U";
+const GIPHY_SEARCH_URL = "https://api.giphy.com/v1/gifs/search";
 
-function getNewGif() {
-  fetch(
-    "https://api.giphy.com/v1/gifs/translate?api_key=JxoghZbdsbGeUxaK82pDSgRxEX40cj8U&s=dogs"
-  )
-    .then(function (response) {
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      return response.json();
-    })
-    .then(function (response) {
-      // console.log(response.data.images.original.url);
-      img.src = response.data.images.original.url;
-      console.log(img.src);
-    })
-    .catch((error) => {
-      console.error("Error fetching the image:", error);
-    });
-}
-showNewGif.addEventListener("click", getNewGif);
+const searchForm = document.getElementById("gif-search-form");
+const searchInput = document.getElementById("gif-search");
+const statusMessage = document.getElementById("status-message");
+const gitContainer = document.getElementById("gif-container");
+const loadMoreButton = document.getElementById("load-more-button");
+
