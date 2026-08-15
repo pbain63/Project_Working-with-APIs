@@ -13,12 +13,14 @@ let currentSearchTerm = "";
 let currentOffset = 0;
 
 // Fetch GIFs from GIPHY
-async function fetchGifs(searchTerm, offset = 0) {
-
-}
+async function fetchGifs(searchTerm, offset = 0) {}
 
 // Search for GIFs
 async function searchGifs() {
-    const searchTerm = searchInput.value.trim();
+  const searchTerm = searchInput.value.trim();
 
+  if (!searchTerm) {
+    statusMessage.textContent = "Please enter something to search for.";
+    return;
+  }
 }
