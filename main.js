@@ -7,3 +7,8 @@ const statusMessage = document.getElementById("status-message");
 const gitContainer = document.getElementById("gif-container");
 const loadMoreButton = document.getElementById("load-more-button");
 
+const GIFS_PER_PAGE = 12;
+
+let currentSearchTerm = "";
+let currentOffset = 0;
+
