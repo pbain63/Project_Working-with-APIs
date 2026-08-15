@@ -130,3 +130,9 @@ async function loadMoreGifs() {
     loadMoreButton.disabled = false;
   }
 }
+
+//Search form submission
+searchForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  searchGifs();
+});
