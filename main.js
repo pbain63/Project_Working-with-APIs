@@ -122,5 +122,7 @@ async function loadMoreGifs() {
     displayGifs(response.data);
     currentOffset += response.data.length;
     statusMessage.textContent = `Showing GIFs for "${currentSearchTerm}"`;
-  } catch (error) {}
+  } catch (error) {
+    
+  }
 }
