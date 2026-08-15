@@ -4,7 +4,7 @@ const GIPHY_SEARCH_URL = "https://api.giphy.com/v1/gifs/search";
 const searchForm = document.getElementById("gif-search-form");
 const searchInput = document.getElementById("gif-search");
 const statusMessage = document.getElementById("status-message");
-const gitContainer = document.getElementById("gif-container");
+const gifContainer = document.getElementById("gif-container");
 const loadMoreButton = document.getElementById("load-more-button");
 
 const GIFS_PER_PAGE = 12;
@@ -23,4 +23,11 @@ async function searchGifs() {
     statusMessage.textContent = "Please enter something to search for.";
     return;
   }
+
+  currentSearchTerm = searchTerm;
+  currentOffset = 0;
+
+  
+
+
 }
