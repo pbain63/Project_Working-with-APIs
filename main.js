@@ -13,7 +13,15 @@ let currentSearchTerm = "";
 let currentOffset = 0;
 
 // Fetch GIFs from GIPHY
-async function fetchGifs(searchTerm, offset = 0) {}
+async function fetchGifs(searchTerm, offset = 0) {
+  const url = new URL(GIPHY_SEARCH_URL);
+
+  url.searchParams.set("api_key", API_KEY);
+  url.searchParams.set("q", searchTerm);
+  url.searchParams.set("limit", GIFS_PER_PAGE);
+  url.searchParams.set("offset", offset);
+  url.searchParams.set("rating", "g");      //TODO
+}
 
 // Search for GIFs
 async function searchGifs() {
@@ -31,6 +39,4 @@ async function searchGifs() {
   loadMoreButton.hidden = true;
 
   statusMessage.textContent = "Searching...";
-
-
 }
