@@ -91,5 +91,11 @@ async function searchGifs() {
 
     statusMessage.textContent = `Showing GIFs for "${currentSearchTerm}"`;
     loadMoreButton.hidden = false;
-  } catch (error) {}
+  } catch (error) {
+    console.error("Error fetching GIFs:", error);
+
+    statusMessage.textContent = "Something went wrong. Please try again.";
+
+    loadMoreButton.hidden = true;
+  }
 }
