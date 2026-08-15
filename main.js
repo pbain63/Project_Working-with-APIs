@@ -27,7 +27,10 @@ async function searchGifs() {
   currentSearchTerm = searchTerm;
   currentOffset = 0;
 
-  
+  gifContainer.replaceChildren();
+  loadMoreButton.hidden = true;
+
+  statusMessage.textContent = "Searching...";
 
 
 }
