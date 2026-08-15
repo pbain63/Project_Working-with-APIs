@@ -99,3 +99,13 @@ async function searchGifs() {
     loadMoreButton.hidden = true;
   }
 }
+
+//Load more GIFs
+async function loadMoreGifs() {
+  if (!currentSearchTerm) {
+    return;
+  }
+
+  loadMoreButton.disabled = true;
+  statusMessage.textContent = "Loading more GIFs...";
+}
