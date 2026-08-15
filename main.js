@@ -14,5 +14,11 @@ let currentOffset = 0;
 
 // Fetch GIFs from GIPHY
 async function fetchGifs(searchTerm, offset = 0) {
-    
+
+}
+
+// Search for GIFs
+async function searchGifs() {
+    const searchTerm = searchInput.value.trim();
+
 }
