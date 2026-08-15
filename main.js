@@ -12,3 +12,7 @@ const GIFS_PER_PAGE = 12;
 let currentSearchTerm = "";
 let currentOffset = 0;
 
+// Fetch GIFs from GIPHY
+async function fetchGifs(searchTerm, offset = 0) {
+    
+}
