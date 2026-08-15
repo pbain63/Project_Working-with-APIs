@@ -76,4 +76,20 @@ async function searchGifs() {
   loadMoreButton.hidden = true;
 
   statusMessage.textContent = "Searching...";
+
+  try {
+    const response = await fetchGifs(currentSearchTerm, currentOffset);
+
+    if (response.data.length === 0) {
+      statusMessage.textContent = `No GIFs found for "${currentSearchTerm}".`;
+
+      return;
+    }
+
+    displayGifs(response.data);
+    currentOffset += response.data.length;
+
+    statusMessage.textContent = `Showing GIFs for "${currentSearchTerm}"`;
+    loadMoreButton.hidden = false;
+  } catch (error) {}
 }
