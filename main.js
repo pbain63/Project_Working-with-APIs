@@ -30,6 +30,23 @@ async function fetchGifs(searchTerm, offset = 0) {
   return response.json();
 }
 
+//Create a GIF card
+function createGifCard(gif) {
+  const article = document.createElement("article");
+  article.classList.add("gif-card");
+
+  const image = document.createElement("img");
+
+  // console.log(gif);
+  image.src = gif.images.fixed_width.webp;
+  console.log(image.src);
+  image.alt = gif.alt_text || "GIF";
+  image.loading = "lazy";
+
+  article.appendChild(image);
+  return article;
+}
+
 // Search for GIFs
 async function searchGifs() {
   const searchTerm = searchInput.value.trim();
