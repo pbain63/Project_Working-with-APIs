@@ -19,3 +19,9 @@ main {
 h1 {
   text-align: center;
 }
+
+#gif-search-form {
+  border: 2px solid blue;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
