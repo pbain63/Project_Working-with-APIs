@@ -48,4 +48,8 @@ button {
   margin: 1rem 0;
 }
 
-
+#gif-container {
+  display: grid;
+  grid-template-columns: auto-fill, minmax(200px, 1fr);
+  gap: 1rem;
+}
