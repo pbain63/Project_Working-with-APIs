@@ -34,6 +34,7 @@ h1 {
 #gif-search {
   flex: 1;
   padding: 0.75rem;
+  font: inherit;
 }
 
 button {
