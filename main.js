@@ -30,7 +30,7 @@ async function fetchGifs(searchTerm, offset = 0) {
   return response.json();
 }
 
-//Create a GIF card
+// Create a GIF card
 function createGifCard(gif) {
   const article = document.createElement("article");
   article.classList.add("gif-card");
@@ -47,7 +47,7 @@ function createGifCard(gif) {
   return article;
 }
 
-//Display GIFS
+// Display GIFs
 function displayGifs(gifs) {
   const fragment = document.createDocumentFragment();
 
@@ -100,7 +100,7 @@ async function searchGifs() {
   }
 }
 
-//Load more GIFs
+// Load more GIFs
 async function loadMoreGifs() {
   if (!currentSearchTerm) {
     return;
@@ -131,11 +131,11 @@ async function loadMoreGifs() {
   }
 }
 
-//Search form submission
+// Search form submission
 searchForm.addEventListener("submit", (event) => {
   event.preventDefault();
   searchGifs();
 });
 
-//Load more button
+// Load more button
 loadMoreButton.addEventListener("click", loadMoreGifs);
