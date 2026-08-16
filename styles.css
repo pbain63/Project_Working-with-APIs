@@ -11,7 +11,7 @@ body {
 }
 
 main {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   width: min(1200px, 90%);
   margin: 0 auto;
   padding: 2rem 0;
@@ -25,3 +25,11 @@ h1 {
   max-width: 600px;
   margin: 0 auto 2rem;
 }
+
+#gif-search-form > div {
+  border: 2px solid red;
+  display: flex;   /*  */
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
