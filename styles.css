@@ -53,3 +53,8 @@ button {
   grid-template-columns: auto-fill, minmax(200px, 1fr);
   gap: 1rem;
 }
+
+.gif-card {
+  overflow: hidden;
+  border-radius: 8px;
+}
