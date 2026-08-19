@@ -10,13 +10,11 @@ a new search.
 
 ---
 
-## Screenshot
+## Screenshots
 
-<!-- Add a screenshot of your project here -->
-
-<!-- Example:
-![GIF Finder Screenshot](./screenshot.png)
--->
+| Desktop View                             | Mobile View                            |
+| ---------------------------------------- | -------------------------------------- |
+| ![Desktop](screenshots/desktop-view.png) | ![Mobile](screenshots/mobile-view.png) |
 
 ---
 
@@ -106,6 +104,7 @@ The current offset is then increased by the number of GIFs returned by the API. 
 If there are no more results, the application hides the **Load More** button and informs the user.
 
 ---
+
 ## Project Structure
 
 ```text
