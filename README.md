@@ -4,7 +4,11 @@ A simple and responsive GIF search application built with **HTML, CSS, and vanil
 **GIPHY API** to search for GIFs based on user provided keywords and allows users to load additional results without starting
 a new search.
 
+---
+
 ## [Live Demo](https://pbain63.github.io/Project_Working-with-APIs)
+
+---
 
 ## Screenshot
 
@@ -13,6 +17,8 @@ a new search.
 <!-- Example:
 ![GIF Finder Screenshot](./screenshot.png)
 -->
+
+---
 
 ## Features
 
@@ -27,6 +33,8 @@ a new search.
 - Uses accessible form labels and status messaging
 - Uses `DocumentFragment` to efficiently add multiple GIF elements to the DOM
 - Supports pagination through the GIPHY API's `offset` parameter
+
+---
 
 ## Technologies Used
 
@@ -47,6 +55,8 @@ a new search.
   - DocumentFragment
 
 - **GIPHY API**
+
+---
 
 ## How It Works
 
@@ -95,6 +105,7 @@ const GIFS_PER_PAGE = 12;
 The current offset is then increased by the number of GIFs returned by the API. This allows subsequent requests to retrieve the next set of results.
 If there are no more results, the application hides the **Load More** button and informs the user.
 
+---
 ## Project Structure
 
 ```text
@@ -115,6 +126,8 @@ gif-finder/
 | `main.js`    | Handles API requests, searching, rendering, pagination, and user interactions |
 | `README.md`  | Project documentation                                                         |
 
+---
+
 ## API Integration
 
 This project uses the **GIPHY Search API**.
@@ -128,6 +141,8 @@ The application sends the following information to the API:
 - `rating` — content rating
 
 The API request is constructed using `URL` and `URLSearchParams`, which keeps query string construction structured and readable.
+
+---
 
 ## Error Handling
 
@@ -149,6 +164,8 @@ If the API returns an empty data array, the application informs the user that no
 
 If the HTTP request fails, the application catches the error and displays a user friendly error message instead of leaving the interface in an unusable state.
 
+---
+
 ## Accessibility
 
 Some accessibility considerations included in the project are:
@@ -162,6 +179,8 @@ Some accessibility considerations included in the project are:
 - Native lazy loading for images
 
 The status message and results section are explicitly represented in the HTML with ARIA attributes.
+
+---
 
 ## Getting Started
 
@@ -192,6 +211,8 @@ cd Project_Working-with-APIs
 4. Start the project using a local development server.
 
 5. Open the application in your browser.
+
+---
 
 ## Security Note
 
@@ -225,6 +246,8 @@ The API key should be stored as an environment variable on the server rather tha
 
 If a real API key has already been pushed to GitHub, **revoke or rotate it immediately**.
 
+---
+
 ## Future Improvements
 
 Possible improvements for future versions include:
@@ -242,6 +265,8 @@ Possible improvements for future versions include:
 - Add automated deployment with GitHub Actions
 - Add pagination controls or infinite scrolling
 - Improve API response validation
+
+---
 
 ## What I Learned
 
@@ -261,11 +286,17 @@ This project helped reinforce several important JavaScript concepts:
 - Working with browser events
 - Improving image loading performance with lazy loading
 
+---
+
 ## License
 
 This project is available for educational and portfolio purposes.
+
+---
 
 ## Acknowledgements
 
 - GIF data provided by the [GIPHY API](https://developers.giphy.com/)
 - Built as a frontend JavaScript practice project.
+
+---
