@@ -12,9 +12,9 @@ a new search.
 
 ## Screenshots
 
-| Desktop View                             | Mobile View                            |
-| ---------------------------------------- | -------------------------------------- |
-| ![Desktop](screenshots/desktop-view.png) | ![Mobile](screenshots/mobile-view.png) |
+| Mobile View                                    | Mobile View with Search Results                            | Desktop View with Search Results                             |
+| ---------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------ |
+| ![Mobile](screenshots/mobile-general-view.png) | ![Mobile](screenshots/mobile-view-with-search-results.png) | ![Desktop](screenshots/desktop-view-with-search-results.png) |
 
 ---
 
